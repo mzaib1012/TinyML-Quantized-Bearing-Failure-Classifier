@@ -22,7 +22,7 @@ The quantization pipeline has been validated and compiled to a deployment-ready 
 The project achieves high-fidelity signal characterization, building complex time-series windows that emulate standard mechanical datasets like the Case Western Reserve University (CWRU) bearing telemetry repository. The baseline $Float32$ model requires approximately **129.89 KB**, which exceeds typical microcontroller memory constraints. Through strict $INT8$ integer optimization, the structure is compressed by over **70%**, resulting in a final binary size of **38.88 KB**, successfully meeting the strict compliance target of $<50\text{ KB}$.
 
 **TinyML Model Validation Report**
-assets/tinyml_bearing_performance_report.png
+[assets/tinyml_bearing_performance_report.png]
 
 
 ## 🛠️ How to Replicate
