@@ -4,6 +4,7 @@
   "metadata": {
     "colab": {
       "provenance": [],
+      "gpuType": "T4",
       "authorship_tag": "ABX9TyOr6vYh6kEQgSc2SqsJRXYM",
       "include_colab_link": true
     },
@@ -13,7 +14,8 @@
     },
     "language_info": {
       "name": "python"
-    }
+    },
+    "accelerator": "GPU"
   },
   "cells": [
     {
@@ -28,14 +30,14 @@
     },
     {
       "cell_type": "code",
-      "execution_count": 7,
+      "execution_count": 8,
       "metadata": {
         "colab": {
           "base_uri": "https://localhost:8080/",
-          "height": 854
+          "height": 987
         },
         "id": "hVcOOOqCtc5k",
-        "outputId": "e6d13cb0-5809-462f-a659-b1bc98098688"
+        "outputId": "6da90ffc-e5ae-4166-a1dc-9810eadba9a8"
       },
       "outputs": [
         {
@@ -49,19 +51,19 @@
             "✅ Baseline training complete. Validation Accuracy: 100.00%\n",
             "\n",
             "🛡️ Commencing Post-Training 8-Bit Quantization (INT8 Optimization)...\n",
-            "Saved artifact at '/tmp/tmpe7jtx5gp'. The following endpoints are available:\n",
+            "Saved artifact at '/tmp/tmpi2x1_l8u'. The following endpoints are available:\n",
             "\n",
             "* Endpoint 'serve'\n",
-            "  args_0 (POSITIONAL_ONLY): TensorSpec(shape=(None, 128, 1), dtype=tf.float32, name='keras_tensor_36')\n",
+            "  args_0 (POSITIONAL_ONLY): TensorSpec(shape=(None, 128, 1), dtype=tf.float32, name='keras_tensor_42')\n",
             "Output Type:\n",
             "  TensorSpec(shape=(None, 4), dtype=tf.float32, name=None)\n",
             "Captures:\n",
-            "  135299431230032: TensorSpec(shape=(), dtype=tf.resource, name=None)\n",
-            "  135299431228880: TensorSpec(shape=(), dtype=tf.resource, name=None)\n",
-            "  135299431229840: TensorSpec(shape=(), dtype=tf.resource, name=None)\n",
-            "  135299431229648: TensorSpec(shape=(), dtype=tf.resource, name=None)\n",
-            "  135299431232528: TensorSpec(shape=(), dtype=tf.resource, name=None)\n",
-            "  135299431232720: TensorSpec(shape=(), dtype=tf.resource, name=None)\n"
+            "  135299431232336: TensorSpec(shape=(), dtype=tf.resource, name=None)\n",
+            "  135299431230800: TensorSpec(shape=(), dtype=tf.resource, name=None)\n",
+            "  135299431231184: TensorSpec(shape=(), dtype=tf.resource, name=None)\n",
+            "  135299431233872: TensorSpec(shape=(), dtype=tf.resource, name=None)\n",
+            "  135299431235216: TensorSpec(shape=(), dtype=tf.resource, name=None)\n",
+            "  135299431235408: TensorSpec(shape=(), dtype=tf.resource, name=None)\n"
           ]
         },
         {
